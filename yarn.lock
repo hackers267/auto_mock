@@ -92,6 +92,15 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@babel/types@^7.13.14":
+  version "7.13.14"
+  resolved "https://registry.npm.taobao.org/@babel/types/download/@babel/types-7.13.14.tgz?cache=0&sync_timestamp=1617027467959&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Ftypes%2Fdownload%2F%40babel%2Ftypes-7.13.14.tgz#c35a4abb15c7cd45a2746d78ab328e362cbace0d"
+  integrity sha1-w1pKuxXHzUWidG14qzKONiy6zg0=
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.12.11"
+    lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
 "@jest/types@^26.6.2":
   version "26.6.2"
   resolved "https://registry.npm.taobao.org/@jest/types/download/@jest/types-26.6.2.tgz#bef5a532030e1d88a2f5a6d933f84e97226ed48e"
