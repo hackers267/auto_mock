@@ -1,10 +1,13 @@
-import {parse} from "@babel/parser"
+import { parse } from "@babel/parser";
 import traverse from "@babel/traverse";
-import {columns} from "../templates/columns";
+import * as t from "@babel/types";
+import { mock } from "../templates/mock";
 
-const ast = parse(columns,{plugins:["typescript"]});
-traverse(ast,{
-    VariableDeclaration:function (path){
-        console.log(path)
+const ast = parse(mock, { sourceType: "module", plugins: ["typescript"] });
+traverse(ast, {
+  ObjectExpression(path) {
+    if (t.isObjectExpression(path.node)) {
+      console.log(path.node.properties);
     }
-})
+  },
+});
